@@ -3,6 +3,7 @@
   "displayName": "phx",
   "description": "Phoenix language support",
   "version": "0.0.1",
+  "repository": {"url": "https://github.com/TomtheCoder2/phoenix_vscode"},
   "engines": {
     "vscode": "^1.45.0"
   },
