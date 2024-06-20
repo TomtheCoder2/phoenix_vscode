@@ -1,0 +1,42 @@
+{
+  "name": "phx",
+  "displayName": "phx",
+  "description": "Phoenix language support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.45.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Themes"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "phx",
+        "aliases": [
+          "Phoenix",
+          "phx"
+        ],
+        "extensions": [
+          ".phx"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "phx",
+        "scopeName": "source.phx",
+        "path": "./syntaxes/phx.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Phoenix Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/phx-color-theme.json"
+      }
+    ]
+  }
+}

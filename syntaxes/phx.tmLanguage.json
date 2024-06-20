@@ -1,0 +1,68 @@
+{
+	"scopeName": "source.phx",
+	"fileTypes": ["phx"],
+	"name": "phx",
+	"patterns": [
+	  { "include": "#keywords" },
+	  { "include": "#comments" },
+	  { "include": "#numbers" },
+	  { "include": "#strings" },
+	  { "include": "#function" },
+	  { "include": "#variables" }
+	],
+	"repository": {
+	  "keywords": {
+		"patterns": [
+		  {
+			"name": "keyword.control.phx",
+			"match": "\\b(fun|var|return|if|else|while|nil)\\b"
+		  }
+		]
+	  },
+	  "comments": {
+		"patterns": [
+		  {
+			"name": "comment.line.double-slash.phx",
+			"match": "//.*$"
+		  }
+		]
+	  },
+	  "numbers": {
+		"patterns": [
+		  {
+			"name": "constant.numeric.phx",
+			"match": "\\b\\d+\\b"
+		  }
+		]
+	  },
+	  "strings": {
+		"patterns": [
+		  {
+			"name": "string.quoted.double.phx",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+			  { "match": "\\\\(?:[nrt\"'\\\\]|x\\{[0-9a-fA-F]+\\}|u\\{[0-9a-fA-F]+\\})" }
+			]
+		  }
+		]
+	  },
+	  "function": {
+		"patterns": [
+		  {
+			"name": "entity.name.function.phx",
+			"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\s*(?=\\()"
+		  }
+		]
+	  },
+	  "variables": {
+		"patterns": [
+		  {
+			"name": "variable.other.phx",
+			"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+		  }
+		]
+	  }
+	}
+  }
+  
